@@ -18,6 +18,13 @@
 		<module>ci-friendly-module2</module>
 	</modules>
 
+	<distributionManagement>
+		<repository>
+			<id>li-test-repo</id>
+			<url>https://linkedin.jfrog.io/linkedin/test-repo</url>
+		</repository>
+	</distributionManagement>	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -46,4 +53,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
