@@ -20,7 +20,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>li-test-repo</id>
+			<id>deploy-repo</id>
 			<url>https://linkedin.jfrog.io/linkedin/test-repo</url>
 		</repository>
 	</distributionManagement>	
@@ -30,7 +30,6 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>flatten-maven-plugin</artifactId>
-				<version>1.0.0</version>
 				<configuration>
 					<updatePomFile>true</updatePomFile>
 				</configuration>
