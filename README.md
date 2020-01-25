@@ -1,21 +1,13 @@
 This project demonstrates how to do a  multi-module CI friendly release management with Maven 3.2.1 and above.
- 
-It can be used without flattening plugin if it's modules are not used in other project dependencies.
 
 Usage: 
 
 ~~~~
-mvn clean deploy scm:tag -Drevision=$BUILD_NUMBER
+mvn clean deploy -Drevision=0.2.$BUILD_NUMBER
 ~~~~
 
-or in case you want branch to be created together with tag
-
-~~~~
-mvn clean deploy scm:tag scm:branch -Drevision=$BUILD_NUMBER
-~~~~
-
+The upstream also has tagging/branching. This fork does not use it.
 
 Inspired by [Maven Release Plugin: Dead and Buried](https://axelfontaine.com/blog/dead-burried.html)
 and
 [Defining a central version in multi-module projects](https://www.mojohaus.org/flatten-maven-plugin/examples/example-central-version.html)
-
