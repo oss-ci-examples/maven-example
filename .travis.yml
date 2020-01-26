@@ -1,0 +1,14 @@
+language: java
+
+jdk:
+  - openjdk8
+
+branches:
+  - master
+
+#Below skips the installation step completely (https://docs.travis-ci.com/user/customizing-the-build/#Skipping-the-Installation-Step)
+install:
+ - true
+
+script:
+  - mvn clean deploy -s .ci.settings.xml -Drevision=0.2.$TRAVIS_BUILD_NUMBER 
