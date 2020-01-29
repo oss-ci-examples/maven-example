@@ -5,10 +5,10 @@ This project demonstrates how to do a multi-module CI publication with Maven 3.2
  - no noisy version bumps in the pom files
  - no tagging/branching (wanted to keep the example simple, upstream repo has this if you need this)
  - published version is clean and semver, i.e. 0.2.1, 0.2.2 (e.g. no timestamp/Git hash in the version)
- - Travis CI publishes a new version on every push to master (.travis.yml file).
+ - Travis CI publishes a new version on every push to master (see .travis.yml file).
  - Travis CI cron job (https://docs.travis-ci.com/user/cron-jobs/#adding-cron-jobs) runs daily and publishes a new version
  - Published artifacts can be found in public JFrog Artifactory: https://linkedin.jfrog.io/linkedin/test-repo/foo/sample/maven/ci/friendly/ci-friendly-parent/ 
- - Unique version is constructed with help of ```TRAVIS_BUILD_NUMBER``` environment variable.
+ - Unique version is constructed with the help of ```TRAVIS_BUILD_NUMBER``` environment variable.
 
 ## Inspiration
 
