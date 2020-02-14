@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>foo.sample.maven.ci.friendly</groupId>
+		<groupId>com.linkedin.sample.maven.ci.friendly</groupId>
 		<artifactId>ci-friendly-parent</artifactId>
 		<version>${revision}</version>
 		<relativePath>../pom.xml</relativePath>
@@ -12,7 +12,7 @@
 	<artifactId>ci-friendly-module2</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>foo.sample.maven.ci.friendly</groupId>
+			<groupId>com.linkedin.sample.maven.ci.friendly</groupId>
 			<artifactId>ci-friendly-module1</artifactId>
 			<version>${revision}</version>
 		</dependency>
