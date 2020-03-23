@@ -28,7 +28,7 @@
 	<distributionManagement>
 		<repository>
 			<id>deploy-repo</id>
-			<url>file:///Users/vgarg/test_repo</url>
+			<url>https://linkedin.jfrog.io/linkedin/test-repo</url>
 		</repository>
 	</distributionManagement>	
 
@@ -37,6 +37,9 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>flatten-maven-plugin</artifactId>
+				<configuration>
+					<updatePomFile>true</updatePomFile>
+				</configuration>
 				<executions>
 					<execution>
 						<id>flatten</id>
